@@ -1,0 +1,156 @@
+.orm { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  
+  }
+input{
+  border-width: thin;
+  border-color: rgb(41, 40, 40);
+}
+ 
+header{
+  padding: 1em;
+  background: white;
+  
+}
+article{
+
+  padding: 1em;
+  background:white;
+}
+ nav{
+  padding: 1em;
+  background: gold;
+  
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;   
+  height: 110%;  
+  width: 95%;
+  margin-left: 8rem; 
+  }
+#mainNav { 
+  grid-area: nav; 
+  width: 100%;
+  margin-left: 5rem;
+  background-image: url(./imhg.jpg);
+  }
+  h1{
+font-size: 5rem;
+color: white;
+
+
+  }
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+.Blog{
+  display: flex;
+      text-decoration: none;
+      justify-content: end;
+      color: black;
+      font-size: 1rem;
+      font-weight: 500;
+  
+  }
+  .Login{
+      display: flex;
+      text-decoration: none;
+      justify-content: end;
+      color: black;
+      font-size: 1rem;
+      font-weight: 500;
+  }
+  .Register{
+      display: flex;
+      justify-content: end;
+      color: black;
+      text-decoration: underline ;
+      font-size: 1rem;
+      font-weight: 500;
+  }
+  #name{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: rgb(32, 27, 27);
+    outline: none;
+    width: 24rem;
+    height: 20px;
+  }
+  #address
+  {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: rgb(32, 27, 27);
+    outline: none;
+    width: 24rem;
+    height: 20px;
+    margin-top: 1rem;
+  }
+  #con{
+    border-top: none;
+    border-left: none;
+    border-bottom-color: rgb(32, 27, 27);
+    outline: none;
+    width: 12rem;
+    height: 20px;
+    margin-top: 1rem;
+  }
+  #cons{
+  border-top: none;
+      border-left: none;
+      border-right:none;
+      border-bottom-color: rgb(32, 27, 27);
+      outline: none;
+      width: 12rem;
+      height: 20px;
+      margin-top: 1rem;
+  }
+  #sqft{
+    border-top: none;
+        border-left: none;
+        border-right:none;
+        border-bottom-color: rgb(32, 27, 27);
+        outline: none;
+        width: 12rem;
+        height: 20px;
+        margin-top: 1rem;
+    }
+#opf{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: rgb(32, 27, 27);
+  outline: none;
+  width: 24rem;
+  height: 20px;
+
+}
